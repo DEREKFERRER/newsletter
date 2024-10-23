@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'RobotoReg';
+    src: url(./assets/fonts/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: 'RobotoBold';
+    src: url(./assets/fonts/Roboto-Bold.ttf),;
+}
+:root {
+    /* primary */
+    --tomato: hsl(4, 100%, 67%);
+
+    /* Neutral */
+    --DarkSlateGrey: hsl(234, 29%, 20%);
+    --CharcoalGrey: hsl(235, 18%, 26%);
+    --Grey: hsl(231, 7%, 60%);
+    --White: hsl(0, 0%, 100%);
+
+}
+*{
+    /* always add this to your css it is IMPORTANT */
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-size: 1rem;
+    font-family: 'RobotoReg';
+}
+
+@media (min-width: 1000px) {
+    body {
+        background-color: var(--DarkSlateGrey);
+    }
+}

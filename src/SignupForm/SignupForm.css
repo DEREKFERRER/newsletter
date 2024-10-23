@@ -1,0 +1,138 @@
+.img__mobile {
+    width: 100%;
+}
+
+.container {
+    margin:  1rem 1.5rem;
+    border: none;
+}
+
+h1 {
+    color: var(--DarkSlateGrey);
+    font-family: "RobotoBold";
+    font-size: 2.5rem;
+}
+
+ul {
+    padding: 0 0 0 30px;
+}
+
+li {
+    list-style-image: url('../assets/images/icon-list.svg');
+    padding: 0 0 1rem .5rem;
+}
+
+li::marker {
+    margin: 0;
+}
+
+label {
+    font-family: "RobotoBold";
+    font-size: .6rem;
+    color: var(--DarkSlateGrey);
+}
+
+form {
+    width: 100%;
+}
+
+.email__input {
+    display: block;
+    margin: .5rem 0 1rem 0;
+    padding: 1rem;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid var(--Grey);
+    color: var(--DarkSlateGrey);
+    cursor: url('../assets/images/icons8-hand-cursor.svg'), auto;
+}
+
+button {
+    width: 100%;
+    padding: 1rem;
+    margin: 0 0 1.5rem 0;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--DarkSlateGrey);
+    font-size: 1.1rem;
+    color: var(--White);
+    cursor: url('../assets/images/icons8-hand-cursor.svg'), auto;
+}
+
+.img__desktop {
+    display: none;
+}
+
+@media (min-width: 1000px) {
+    .desktop__container {
+        display: flex;
+        justify-content: center;
+        padding: 2.9rem 2rem;
+    }
+
+    .desktop__style {
+        background-color: var(--White);
+        display: flex;
+        justify-content: center;
+        padding: 1rem 0;
+        border-radius: 20px;
+    }
+
+    .img__mobile{
+        display: none;
+    }
+
+    .img__desktop{
+       display: block;
+       width: 320px;
+    }
+
+    .container{
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        padding: 0 2rem;
+    }
+ 
+    .container__text h1 {
+        font-size: 2.54rem;
+        margin-bottom: 1rem;
+    }
+
+    .container__text p {
+        line-height: 20px;
+    }
+
+    .container__text p, ul, li {
+        font-size: .72rem;
+    }
+
+    .container__text li {
+        padding: 0 0 .5rem 0;
+    }
+    
+    .container__text button {
+        font-size: .9rem;
+    }
+
+    .container__text button:hover {
+        background-color: var(--tomato);
+    }
+
+    .email__error {
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+    }   
+    
+    .email__error p {
+        font-family: "RobotoBold";
+        font-size: .6rem;
+        margin: 0;
+    }
+
+    
+    
+}

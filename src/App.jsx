@@ -16,6 +16,7 @@ function App() {
         e.preventDefault()
         if (email === "" || !/\S+@\S+\.\S+/.test(email)) {
             setIsError(false)
+            setEmail("")
         } else {
             setIsError(true)
             onRouteChange("Subscribed");
